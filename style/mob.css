@@ -1,0 +1,41 @@
+.navbar{
+  display: none;
+}
+*{
+  text-align: center;
+  align-items: center;
+}
+@media (max-width:600px){
+  #nav-1 {
+   background-color: #fff;
+   max-height: 12%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px 15%;
+}
+
+ #nav-1 frist-nav-item {
+   width: 20%;
+}
+ #nav-1 .nav1-3 {
+   background: red;
+   padding: 1rem 2rem;
+   font-size: 1.5rem;
+}
+
+ #nav-1 .nav1-3 a {
+   text-decoration: none;
+   color: #fff;
+}
+ #nav-1 .nav1-3:hover {
+   background: red;
+}
+
+@media (max-width:300px){
+
+  #mycard{
+    width: 95%;
+    color: blue;
+  }
+} 

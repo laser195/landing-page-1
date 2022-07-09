@@ -1,0 +1,45 @@
+.owl-carousel{
+    position:absolute ;
+
+}
+.owl-nav{
+    display: none;
+    position: absolute;
+    top: 100px;
+    z-index: 3;
+    font-size: 10rem;
+    color: transparent black;
+    opacity: 0.5;
+
+}
+.owl-dots{
+    z-index: 111;
+    position: absolute;
+    top: 440px;
+    left: 52%;
+}
+.frist-cards{
+    display: flex;
+    flex-direction: row;
+    top: 50px;
+
+.card{
+    top: 500px;
+    left: 20%;
+    padding: 35px 20px;
+    height: 10vh;
+    color: red;
+    
+    p{
+      font-size: 16px;
+      font-weight: 400;
+    }
+ 
+}
+}
+#card-two{
+    @include card-hover;
+}
+.chover:hover{
+    @include card-hover;
+}
