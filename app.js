@@ -1,3 +1,11 @@
+const jarallaxEls = document.querySelectorAll('.jarallax')
+const btnMob = document.getElementById('btn-mob')
+const cardsOne = document.querySelector('frist-cards')
+const navOne = document.querySelector('#nav-2')
+const llist = document.querySelector('#dropdown')
+const btn = document.querySelector('#dropdownMenuButton1')
+const list = document.querySelector('#dropdown-menu')
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
   });
@@ -22,12 +30,9 @@ $(document).ready(function(){
     autoplaySpeed: 1000,
     });
   });
-  const cardsOne = document.querySelector('frist-cards')
-  const navOne = document.querySelector('#nav-2')
+  
 
-   let llist = document.querySelector('#dropdown')
-      let btn = document.querySelector('#dropdownMenuButton1')
-      let list = document.querySelector('#dropdown-menu')
+
       console.log(llist);
       llist.addEventListener('mouseover',()=>{
         console.log(111);
@@ -48,3 +53,23 @@ $(document).ready(function(){
       if(navOne.getElementsByClassName.position=='fixed'){
         cardsOne.getElementsByClassName.position='absolute'
       }
+
+
+
+
+
+jarallax(jarallaxEls, {
+	speed: 0.2,
+})
+const jara2 = document.getElementById('jarallax-container-0')
+jarallax(jara2, {
+	speed: 0.2,
+})
+
+const dropmenu = ()=>{
+  console.log(123);
+  navOne.classList.toggle('dddd')
+  navOne.classList.toggle('mob')
+}
+
+btnMob.addEventListener('click',dropmenu)

@@ -1,85 +1,8 @@
-// nav{
-//     width: 100%;
-//     height: 10%;
-//     background-color: $darkblue;
-//     display: flex;
-//     flex-direction: column;
-//     .nav-one{
-        
-//         .nav-one-2{
-//             padding: 0 80px;
-//             width: 100vw;
-//             height: 70%;
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: space-between;
-//             flex-wrap: wrap;
-//         }
-//         padding: 0 5vw;
-//         width: 100%;
-//         background-color: #fff;
-//         display: flex;
-//         flex-direction: row;
-//         .inside-nav-one-1{
-//             padding: 5% 0;  
-//             width: 35%;
-//             height: 30%;
-//         }
-//         .inside-nav-one-2{
-//             padding-left: 15vw;
-//             background-color: $orange-p;
-//             width: 65%;
-//         }
-//         .up-links{
-//             padding: 8% 0;
-//             background-color: $orange-p;
-//             list-style: none;
-//             display: flex;
-//             flex-direction: row;
-//         }
-//     }
-//     .nav-two{
-//         .sec{
-//             display: flex;
-//             flex-direction: row;
-//             padding: 2px;
-//             li{
-//                 padding: 5px;
-//                 a{
-//                     text-decoration: none;
-//                     color: #fff;
-//                 }
-//             }
-//         }
-//     }
-// }
-// .navbar{
-//     display: none;
-//     background-color: #fff;
-//     li{
-//         margin: 4px;
 
-//     }
-//     .dropdown-item{
-//         color: #000;
-//     }
-// }
-// .navbar-nav {
-//     padding: 2px;
-//     display: flex;
-//     flex-direction: column;
-//     margin-bottom: 0;
-//     list-style: none;
-//     align-items: center;
-// }
-// .container-fluid{
-    
-//     a{
-//         text-decoration: none;
-//         color: #000;
-//     }
-// }
 .hidden{
+    display: none;
+}
+#btn-mob{
     display: none;
 }
 #nav-1{
@@ -100,6 +23,8 @@
         background: $prim-g;
         padding: 1rem 2rem;
         font-size: 1.5rem;
+        border-radius: 1em;
+        transition: background 20s;
         a{
             text-decoration: none;
             color: #fff;
@@ -107,11 +32,10 @@
     
     }
     .nav1-3:hover {
-    
+        
         background: $prim-g-hover;
-    
-}
-}
+      }
+     }  
 
 .nav1-2{
     display: flex;
@@ -129,7 +53,7 @@
       font-size: 0.8rem;
       a{
         font-size: 0.8rem;
-        color: #007BFF;
+        color: #00F;
       }
    }
  } 
@@ -137,17 +61,26 @@
     
     span{
         color: #585b5e; 
+         transition: color 2s ease-out;
     }
     #text{ 
         color: #585b5e;
+        -webkit-transition: color 2s ease-out;
+        -moz-transition: color 2s ease-out;
+        -o-transition: color 2s ease-out;
+         transition: color 2s ease-out;
      
         a{
           color: #007BFF;
+          -webkit-transition: color 2s ease-out;
+          -moz-transition: color 2s ease-out;
+          -o-transition: color 2s ease-out;
+           transition: color 2s ease-out;
         }
        
     }
 }
-#nav-2{
+.dddd{
     padding: 0 15%;
     background-color: #fff;
     width: 100%;
@@ -223,3 +156,75 @@
       }
 
 
+.mob{
+    padding: 0 15%;
+    background-color: #fff;
+    width: 100%;
+    height: 1.5cm;
+    .main-ul{
+        float: right;
+        padding: 7px;
+        display: row;
+        flex-direction: row;
+        align-items: right;
+        cursor: pointer;
+    }
+    .main-li{
+        font-weight: bolder;
+        list-style: none;
+        margin: 0 3 px;
+        padding: 7px;
+        padding-bottom: 0;
+        transition-delay: 20sec;
+        a{
+            text-decoration: none;
+            color: #585b5e;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    #btn-mob{
+        display: block;
+        position: fixed;
+        top: 80px;
+        z-index: 1001;
+        color: #00F;
+        background-color:  #b4b4f3 ;
+        opacity: 0.5;
+
+    }
+    #nav-1{
+        max-height: 12%;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 15%;
+
+        a{
+            background-color: transparent;
+        }
+    }
+    
+    .dddd{
+        display: none;
+    }
+    .mob{
+        position: fixed;
+        top: 90px;
+        z-index: 1000;
+        padding: 0 0%;
+        height: 1.5cm;
+        direction: rtl;
+        width: 20%;
+        
+        .main-ul{
+            float: right;
+            padding: 7px;
+            display: row;
+            flex-direction: row;
+            align-items: right;
+            cursor: pointer;
+        }
+  }
+}

@@ -1,4 +1,4 @@
-@import '_var.scss','_nav.scss','_sec1','_third','_fourth.scss',"mob.scss";
+@import '_var.scss','_nav.scss','_sec1','_third','_fourth.scss',"mob.scss","_parx.scss";
 
 *{
     margin: 0;
@@ -7,4 +7,17 @@
 }
 body{
     background-color: #f1ecec;
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        display: flex;
+         flex-direction: column};
+
+         .wrapper{
+            img{
+                width: 70%;
+            }
+         }
 }

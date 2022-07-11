@@ -1,3 +1,4 @@
+
 .owl-carousel{
     position:absolute ;
 
@@ -21,14 +22,17 @@
 .frist-cards{
     display: flex;
     flex-direction: row;
-    top: 50px;
+    top: -1rem;
+    left: 25rem;
+    position: relative;
+    z-index: 101;
+    width: 55rem;
 
 .card{
     top: 500px;
     left: 20%;
     padding: 35px 20px;
-    height: 10vh;
-    color: red;
+    height: 15vw;
     
     p{
       font-size: 16px;
@@ -42,4 +46,34 @@
 }
 .chover:hover{
     @include card-hover;
+}
+
+
+@media only screen and (max-width: 600px){
+    .owl-carousel{
+        position:relative ;
+    
+    }
+    .frist-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20rem;
+    
+    .card{
+        top: 100px;
+        left: -360px;
+        padding: 35px 20px;
+        height: 60vw;
+        
+        p{
+          font-size: 16px;
+          font-weight: 400;
+        }
+     
+    }
+    }
+    .owl-dots{
+        display: none;
+    }
 }
