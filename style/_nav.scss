@@ -185,12 +185,14 @@
 @media only screen and (max-width: 600px) {
     #btn-mob{
         display: block;
-        position: fixed;
-        top: 80px;
-        z-index: 1001;
+        position: relative;
         color: #00F;
         background-color:  #b4b4f3 ;
         opacity: 0.5;
+        top: -8vh;
+        left: 80vw;
+        width: 8%;
+        z-index: 1001;
 
     }
     #nav-1{
@@ -208,23 +210,32 @@
     
     .dddd{
         display: none;
+        float: right;
     }
     .mob{
-        position: fixed;
-        top: 90px;
-        z-index: 1000;
-        padding: 0 0%;
+        background-color: transparent;
+        position: absolute;
+        top: 24vh;
+        z-index: 1001;
         height: 1.5cm;
         direction: rtl;
-        width: 20%;
+        width: 100%;
+        right: 0;
         
         .main-ul{
+            
             float: right;
             padding: 7px;
             display: row;
-            flex-direction: row;
+            background-color: #e0e9f3;
+            flex-direction: row important;
             align-items: right;
             cursor: pointer;
         }
+  }
+  #dropdown{
+    display: flex;
+    padding: 1px;
+   flex-direction: row;
   }
 }

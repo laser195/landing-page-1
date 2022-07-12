@@ -1,6 +1,8 @@
 
 .owl-carousel{
     position:absolute ;
+    width: 99%;
+    margin-left:1.5%;
 
 }
 .owl-nav{
@@ -19,27 +21,33 @@
     top: 440px;
     left: 52%;
 }
-.frist-cards{
-    display: flex;
-    flex-direction: row;
-    top: -1rem;
-    left: 25rem;
+#frist-cards{
     position: relative;
-    z-index: 101;
-    width: 55rem;
-
-.card{
-    top: 500px;
-    left: 20%;
-    padding: 35px 20px;
-    height: 15vw;
-    
-    p{
-      font-size: 16px;
-      font-weight: 400;
+    z-index: 1000;
+    display: flex;
+    margin: 0 10% ;
+    margin-left: 30%;
+    width: 65%;
+    top: 51vh;
+    .the-cards{
+         display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
     }
- 
-}
+        
+
+        .card{
+          
+            padding: 35px 20px;
+            height: 15vw;
+            width: 15vw;
+            
+            p{
+              font-size: 16px;
+              font-weight: 400;
+            }
+    }
 }
 #card-two{
     @include card-hover;
@@ -54,26 +62,36 @@
         position:relative ;
     
     }
-    .frist-cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 20rem;
-    
-    .card{
-        top: 100px;
-        left: -360px;
-        padding: 35px 20px;
-        height: 60vw;
+    #frist-cards{
+        z-index: 1;
+        position: relative;
+        width: 40vw;
+        top: 11vh;
+        margin: 0 10% ;
         
-        p{
-          font-size: 16px;
-          font-weight: 400;
+        .the-cards{
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
-     
+            
+    
+            .card{
+              
+                padding: 35px 20px;
+                height: 50vw;
+                width: 80vw;
+                
+                p{
+                  font-size: 16px;
+                  font-weight: 400;
+                }
+        }
     }
-    }
+    
     .owl-dots{
         display: none;
     }
 }
+

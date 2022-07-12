@@ -47,7 +47,7 @@ $(document).ready(function(){
 
       ScrollOut({
         targets: ".sticky-header",
-        offset: 1000,
+        offset: 100,
       });
 
       if(navOne.getElementsByClassName.position=='fixed'){
