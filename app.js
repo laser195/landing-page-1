@@ -5,6 +5,7 @@ const navOne = document.querySelector('#nav-2')
 const llist = document.querySelector('#dropdown')
 const btn = document.querySelector('#dropdownMenuButton1')
 const list = document.querySelector('#dropdown-menu')
+const header = document.querySelector('header')
 
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel();
@@ -70,6 +71,7 @@ const dropmenu = ()=>{
   console.log(123);
   navOne.classList.toggle('dddd')
   navOne.classList.toggle('mob')
+  header.classList.toggle('hederBack')
 }
 
 btnMob.addEventListener('click',dropmenu)
